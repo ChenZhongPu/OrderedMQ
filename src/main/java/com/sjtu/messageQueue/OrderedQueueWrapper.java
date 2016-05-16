@@ -5,6 +5,7 @@ import com.aliyun.mns.model.Message;
 import com.sjtu.messageQueue.util.MQConstants;
 
 import java.util.PriorityQueue;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by chenzhongpu on 5/16/16.
@@ -114,6 +115,7 @@ class MessageBuffer {
     private int nextSeqId;
 
     private PriorityQueue<SeqMessage> bufferQueue;
+
 
     public MessageBuffer(long bufferSize) {
         this.bufferSize = bufferSize;

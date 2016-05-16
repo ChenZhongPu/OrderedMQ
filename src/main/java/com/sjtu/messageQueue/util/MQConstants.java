@@ -12,4 +12,6 @@ public class MQConstants {
 
     public static final int POLLING_WAIT = 15;
     public static final long MAX_MSG_SIZE = 2048L;
+
+    public static final int CHECK_INTERVAL = 5;
 }
